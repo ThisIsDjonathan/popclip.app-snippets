@@ -1,0 +1,7 @@
+#popclip Remove Backslashes by djonathan.com
+name: Remove Backslashes
+icon: iconify:tabler:backslash
+javascript: |
+  let text = popclip.input.text;
+  text = text.replace(/\\/g, '');
+  popclip.pasteText(text);
